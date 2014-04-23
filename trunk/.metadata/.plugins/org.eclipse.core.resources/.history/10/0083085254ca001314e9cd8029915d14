@@ -1,0 +1,125 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.lionfart</groupId>
+  <artifactId>lionfartweb</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>lionfartweb</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+     <dependency>
+        <groupId>commons-lang</groupId>
+        <artifactId>commons-lang</artifactId>
+        <version>2.6</version>
+    </dependency>
+    
+    <dependency>
+		<groupId>javax.inject</groupId>
+		<artifactId>javax.inject</artifactId>
+		<version>1</version>
+		<scope>provided</scope>
+	</dependency>
+    
+    <dependency>
+	    <groupId>javax.enterprise</groupId>
+		<artifactId>cdi-api</artifactId>
+		<version>1.0-CR1</version>
+		<scope>provided</scope>
+	</dependency>
+    
+    <dependency>
+	<groupId>javax.faces</groupId>
+	<artifactId>jsf-api</artifactId>
+	<version>2.1</version>
+	<scope>provided</scope>
+  </dependency>
+
+  <dependency>
+  	<groupId>org.primefaces</groupId>
+	<artifactId>primefaces</artifactId>
+	<version>3.5</version>
+  </dependency>
+	
+  <dependency>  
+    <groupId>org.primefaces.themes</groupId>  
+    <artifactId>start</artifactId>  
+    <version>1.0.9</version>  
+   </dependency> 
+    
+   <dependency>
+		  <groupId>javax.ws.rs</groupId>
+		  <artifactId>javax.ws.rs-api</artifactId>
+		  <version>2.0-m15</version>
+	</dependency>
+	 
+	<dependency>
+      <groupId>javax</groupId>
+      <artifactId>javaee-endorsed-api</artifactId>
+      <version>6.0</version>
+      <scope>provided</scope>
+    </dependency>
+    
+       <dependency>
+      <groupId>javax.validation</groupId>
+      <artifactId>validation-api</artifactId>
+      <version>1.0.0.GA</version>
+    </dependency>
+
+
+      <dependency>
+          <groupId>org.jboss.jbossas</groupId>
+          <artifactId>jboss-as-tomcat</artifactId>
+          <version>6.1.0.Final_FULL</version>
+          <scope>runtime</scope>
+      </dependency>
+
+      <dependency>
+          <groupId>javax.transaction</groupId>
+          <artifactId>jta</artifactId>
+          <version>1.1</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>mysql</groupId>
+          <artifactId>mysql-connector-java</artifactId>
+          <version>5.1.18</version>
+          <scope>provided</scope>
+      </dependency>
+      <dependency>
+          <groupId>javax.ejb</groupId>
+          <artifactId>ejb-api</artifactId>
+          <version>3.0</version>
+          <scope>provided</scope>
+      </dependency>
+   	          
+    <dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>servlet-api</artifactId>
+		<version>2.5</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<dependency>
+	    <groupId>joda-time</groupId>
+	    <artifactId>joda-time</artifactId>
+	    <version>2.3</version>
+	</dependency>
+    
+  </dependencies>
+  
+</project>

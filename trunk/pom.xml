@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.lionfart</groupId>
+    <artifactId>lionfart</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0-RC1</version>
+
+    <modules>		
+        <module>Common</module>
+        <module>LionFartPersistence</module>
+        <module>LionFartWebProject</module>
+        <module>LionFartEar</module>
+  </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <version>${project.version}</version>
+                <artifactId>lionfartcommon</artifactId>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <version>${project.version}</version>
+                <artifactId>lionfartpersistence</artifactId>
+        		<scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>${project.groupId}</groupId>
+                <version>${project.version}</version>
+                <artifactId>lionfartweb</artifactId>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

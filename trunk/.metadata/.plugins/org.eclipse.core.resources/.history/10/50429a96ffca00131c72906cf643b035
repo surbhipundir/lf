@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="LionFartEar">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="LionFartPersistence.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/lionfart/lionfartpersistence/1.0.0-RC1/lionfartpersistence-1.0.0-RC1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="LionFartCommon.jar" deploy-path="/lib" handle="module:/resource/Common/Common">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="LionFartWeb.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/lionfart/lionfartweb/1.0.0-RC1/lionfartweb-1.0.0-RC1.war">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
