@@ -22,7 +22,11 @@ fi
 
 cd $SRC_DIR
 
-git pull
+#git pull
+#always override on pull
+git fetch origin master
+git reset --hard FETCH_HEAD
+git clean -df
 
 cd $SRC_DIR/trunk
 
