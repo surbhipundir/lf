@@ -1010,3 +1010,202 @@ Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.e
 
 !ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:26:13.705
 !MESSAGE Module LionFartWebProject published without error.
+!SESSION 2014-04-23 16:33:09.864 -----------------------------------------------
+eclipse.buildId=M20130204-1200
+java.version=1.6.0_43
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:33:46.021
+!MESSAGE 4 files modified in module LionFartEar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:33:46.041
+!MESSAGE 5 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:33:46.061
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:33:46.081
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-04-23 16:33:51.522
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-04-23 16:33:57.518
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:34:13.031
+!MESSAGE Module LionFartEar published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:34:13.041
+!MESSAGE Module LionFartPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:34:13.071
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:34:13.111
+!MESSAGE Module LionFartWebProject published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-04-23 16:35:28.645
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-04-23 16:35:29.077
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-04-23 16:35:29.097
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-04-23 16:35:29.107
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:37:36.979
+!MESSAGE 4 files modified in module LionFartEar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:37:36.989
+!MESSAGE 5 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:37:37.019
+!MESSAGE 4 files modified in module Common
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:37:37.029
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-04-23 16:37:42.099
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-04-23 16:37:47.561
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:38:07.402
+!MESSAGE Module LionFartEar published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:38:07.412
+!MESSAGE Module LionFartPersistence published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:38:07.432
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-23 16:38:07.532
+!MESSAGE Module LionFartWebProject published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:26:35.451
+!MESSAGE 2 files modified in module LionFartEar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:26:35.491
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:26:42.238
+!MESSAGE 2 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:28:07.836
+!MESSAGE 5 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:28:51.582
+!MESSAGE 2 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:28:51.592
+!MESSAGE 3 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:29:04.816
+!MESSAGE 5 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:29:25.411
+!MESSAGE 5 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:29:25.431
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:29:52.249
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:29:56.158
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:30:03.597
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:30:13.586
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:49:42.075
+!MESSAGE 3 files modified in module LionFartEar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:49:42.085
+!MESSAGE 2 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:49:49.845
+!MESSAGE 5 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:50:08.457
+!MESSAGE 5 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:50:08.467
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:50:18.057
+!MESSAGE 2 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:50:28.367
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:50:48.608
+!MESSAGE 2 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:51:03.010
+!MESSAGE 4 files modified in module LionFartEar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:51:03.020
+!MESSAGE 4 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:51:03.050
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:51:03.060
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:52:19.940
+!MESSAGE 2 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:52:36.500
+!MESSAGE 2 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:53:00.272
+!MESSAGE 3 files modified in module LionFartEar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:53:12.342
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:53:26.932
+!MESSAGE 2 files modified in module LionFartEar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:53:26.962
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:54:02.102
+!MESSAGE 3 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:54:14.884
+!MESSAGE 3 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:54:37.246
+!MESSAGE 4 files modified in module LionFartEar
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:54:37.256
+!MESSAGE 4 files modified in module LionFartPersistence
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:54:37.276
+!MESSAGE Module Common published without error.
+
+!ENTRY org.jboss.ide.eclipse.as.core 0 33685505 2014-04-24 15:54:37.286
+!MESSAGE 4 files modified in module LionFartWebProject
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-04-24 15:54:49.276
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16973825 2014-04-24 15:54:49.878
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-04-24 15:54:49.878
+!MESSAGE Server Shutdown Succeeded
