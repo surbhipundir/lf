@@ -28,9 +28,7 @@ cd $SRC_DIR/trunk
 
 rm -rf $SRC_DIR/trunk/.metadata
 
-mvn clean
-
-mvn install
+mvn clean install -U
 
 echo "Now deploying EAR file and standalone.xml files."
 
