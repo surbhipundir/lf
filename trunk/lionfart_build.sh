@@ -16,6 +16,7 @@ if [ ! -d "/usr/src/lf" ]; then
     mkdir /usr/src/lf
 fi
 
+
 #Initially get the repo.
 #git clone https://github.com/zoroloco/lionfart.git /usr/src/lionfart
 
@@ -24,6 +25,8 @@ cd $SRC_DIR
 git pull
 
 cd $SRC_DIR/trunk
+
+rm -rf $SRC_DIR/trunk/.metadata
 
 mvn clean
 
