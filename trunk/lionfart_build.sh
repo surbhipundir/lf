@@ -40,6 +40,8 @@ rm -f /usr/jboss/standalone/deployments/*.ear
 
 cp $SRC_DIR/trunk/standalone.xml /usr/jboss/standalone/configuration/
 
+cp $SRC_DIR/trunk/.m2/settings.xml /root/.m2/
+
 cp -R $SRC_DIR/trunk/LionFartEar/target/*.ear /usr/jboss/standalone/deployments/
 
 service jbossas7 start
