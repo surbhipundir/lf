@@ -39,7 +39,8 @@ echo "Now deploying EAR file and standalone.xml files."
 rm -f /usr/jboss/standalone/deployments/*.ear
 
 cp $SRC_DIR/trunk/standalone.xml /usr/jboss/standalone/configuration/
-cp -R $SRC_DIR/trunk/LionFartEar/target/lionfartear-1.0.0-RC1.ear /usr/jboss/standalone/deployments/
+
+cp -R $SRC_DIR/trunk/LionFartEar/target/*.ear /usr/jboss/standalone/deployments/
 
 service jbossas7 start
 service apache2 start
