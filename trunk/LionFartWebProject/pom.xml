@@ -24,7 +24,7 @@
   <packaging>war</packaging>
 
   <dependencies>    
-  <!-- 
+  
     <dependency>
           <groupId>commons-collections</groupId>
           <artifactId>commons-collections</artifactId>
@@ -40,7 +40,7 @@
 		<groupId>com.lionfart</groupId>
 	    <artifactId>lionfartcommon</artifactId>
   	</dependency>
-   -->
+  
 
     <dependency>
         <groupId>commons-lang</groupId>
