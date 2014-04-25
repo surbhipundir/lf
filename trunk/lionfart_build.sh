@@ -32,7 +32,7 @@ cd $SRC_DIR/trunk
 
 rm -rf $SRC_DIR/trunk/.metadata
 
-mvn clean install -U
+mvn clean install -DskipTests -U -P ci
 
 echo "Now deploying EAR file and standalone.xml files."
 
