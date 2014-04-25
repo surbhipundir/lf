@@ -24,23 +24,21 @@
   <packaging>war</packaging>
 
   <dependencies>    
-      <dependency>
+    <dependency>
           <groupId>commons-collections</groupId>
           <artifactId>commons-collections</artifactId>
           <version>3.2.1</version>
-      </dependency>
+    </dependency>
 
   	<dependency>
 		<groupId>com.lionfart</groupId>
-	    <artifactId>lionfartpersistence</artifactId>
-	    <scope>provided</scope>
+	    <artifactId>lionfartpersistence</artifactId>	    
   	</dependency>
+  	
   	<dependency>
 		<groupId>com.lionfart</groupId>
 	    <artifactId>lionfartcommon</artifactId>
-        <scope>provided</scope>
   	</dependency>
-
 
     <dependency>
         <groupId>commons-lang</groupId>
@@ -52,7 +50,6 @@
 	    <groupId>javax.enterprise</groupId>
 		<artifactId>cdi-api</artifactId>
 		<version>1.0-CR1</version>
-		<scope>provided</scope>
 	</dependency>
 	
 	
@@ -61,7 +58,6 @@
         <groupId>org.apache.openejb</groupId>
         <artifactId>javaee-api</artifactId>
         <version>6.0-4</version>
-        <scope>provided</scope>
      </dependency>
 	-->
 	
@@ -75,14 +71,12 @@
 		<groupId>javax.inject</groupId>
 		<artifactId>javax.inject</artifactId>
 		<version>1</version>
-		<scope>provided</scope>
 	</dependency>
     
     <dependency>
 		<groupId>javax.faces</groupId>
 		<artifactId>jsf-api</artifactId>
 		<version>2.1</version>
-		<scope>provided</scope>
 	</dependency>
 
 	<dependency>
@@ -92,10 +86,10 @@
 	</dependency>
 	
 	<dependency>  
-    <groupId>org.primefaces.themes</groupId>  
-    <artifactId>start</artifactId>  
-    <version>1.0.9</version>  
-</dependency> 
+	    <groupId>org.primefaces.themes</groupId>  
+	    <artifactId>start</artifactId>  
+	    <version>1.0.9</version>  
+    </dependency> 
 	
 	    <dependency>  
     	<groupId>org.atmosphere</groupId>  
@@ -129,25 +123,21 @@
           <groupId>javax.transaction</groupId>
           <artifactId>jta</artifactId>
           <version>1.1</version>
-          <scope>provided</scope>
       </dependency>
       <dependency>
           <groupId>mysql</groupId>
           <artifactId>mysql-connector-java</artifactId>
           <version>5.1.18</version>
-          <scope>provided</scope>
       </dependency>
       <dependency>
           <groupId>javax.ejb</groupId>
           <artifactId>ejb-api</artifactId>
           <version>3.0</version>
-          <scope>provided</scope>
       </dependency>
       <dependency>
           <groupId>javax.servlet</groupId>
           <artifactId>servlet-api</artifactId>
           <version>2.5</version>
-          <scope>provided</scope>
       </dependency>
 
       <dependency>
@@ -168,7 +158,6 @@
       <groupId>javax</groupId>
       <artifactId>javaee-endorsed-api</artifactId>
       <version>6.0</version>
-      <scope>provided</scope>
     </dependency>
     
    	          
@@ -176,7 +165,6 @@
 		<groupId>javax.servlet</groupId>
 		<artifactId>servlet-api</artifactId>
 		<version>2.5</version>
-		<scope>provided</scope>
 	</dependency>
 	
 	<dependency>
