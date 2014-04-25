@@ -85,11 +85,11 @@
 		<version>3.5</version>
 	</dependency>
 	
-	<dependency>  
-	    <groupId>org.primefaces.themes</groupId>  
-	    <artifactId>start</artifactId>  
-	    <version>1.0.9</version>  
-    </dependency> 
+<dependency>
+	<groupId>org.primefaces.extensions</groupId>
+	<artifactId>all-themes</artifactId>
+	<version>1.0.8</version>
+</dependency>
 	
 	    <dependency>  
     	<groupId>org.atmosphere</groupId>  
@@ -113,11 +113,10 @@
 
 
       <dependency>
-          <groupId>org.jboss.jbossas</groupId>
-          <artifactId>jboss-as-tomcat</artifactId>
-          <version>6.1.0.Final_FULL</version>
-          <scope>runtime</scope>
-      </dependency>
+	<groupId>org.jboss.jbossas</groupId>
+	<artifactId>jboss-as-tomcat</artifactId>
+	<version>6.1.0.Final</version>
+	</dependency>
 
       <dependency>
           <groupId>javax.transaction</groupId>
