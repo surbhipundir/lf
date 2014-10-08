@@ -20,3 +20,11 @@ apt-get install apache2
 
 sudo apt-get install libapache2-mod-jk
 
+
+
+Locations:
+
+/etc/init.d/apache start
+/etc/apache2/
+/usr/local/jboss7
+/etc/libapache2-mod-jk/
