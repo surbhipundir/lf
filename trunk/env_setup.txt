@@ -20,7 +20,7 @@ apt-get install apache2
 
 sudo apt-get install libapache2-mod-jk
 
-
+sudo apt-get install git-core
 
 Locations:
 
