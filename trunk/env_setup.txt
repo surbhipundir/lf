@@ -1,0 +1,20 @@
+Installing Apache in front of JBOSS app server on Raspberry Pi.
+
+Download and image to an SD card the following Pi image:
+
+ftp://ftp.mirrorservice.org/sites/downloads.raspberrypi.org/images/debian/7/2013-05-29-wheezy-armel/
+
+apt-get update
+
+apt-get install openjdk-7-jdk
+
+wget http://download.jboss.org/jbossas/7.1/jboss-as-7.1.1.Final/jboss-as-7.1.1.Final.tar.gz
+
+tar zxvf jboss-as-7.1.1.Final.tar.gz -C /usr/local
+
+mv jboss-as-7.1.1.Final/ jboss7
+
+apt-get install apache2
+
+sudo apt-get install libapache2-mod-jk
+
