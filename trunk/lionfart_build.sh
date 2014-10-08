@@ -12,7 +12,7 @@ service apache2 stop
 service jbossas7 stop
 
 #Initially get the repo.
-#git clone https://github.com/zoroloco/lionfart.git /usr/src/lf
+#git clone https://github.com/zoroloco/lf.git /usr/src/lf
 
 echo "Creating source directory(if needed)"
 if [ ! -d "/usr/src/lf" ]; then
