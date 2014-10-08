@@ -22,6 +22,10 @@ sudo apt-get install libapache2-mod-jk
 
 sudo apt-get install git-core
 
+apt-cache search maven
+
+apt-get install maven
+
 Locations:
 
 /etc/init.d/apache start
