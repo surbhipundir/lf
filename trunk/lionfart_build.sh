@@ -7,9 +7,10 @@
 #
 
 SRC_DIR="/usr/src/lf"
+JBOSS_DIR="/usr/local/jboss7"
 
 service apache2 stop
-service jbossas7 stop
+service jboss stop
 
 #Initially get the repo.
 #git clone https://github.com/zoroloco/lf.git /usr/src/lf
@@ -44,9 +45,9 @@ echo "Now copying over latest settings.xml to user .m2 dir so maven can work"
 cp $SRC_DIR/trunk/.m2/settings.xml /root/.m2/
 
 echo "Now deploying EAR file(s)"
-rm -f /usr/jboss/standalone/deployments/*.ear
+rm -f $JBOSS_DIR/standalone/deployments/*.ear
 cp -R $SRC_DIR/trunk/LionFartEar/target/*.ear /usr/jboss/standalone/deployments/
 
 echo "Now lets start up jboss and apache again and hope this all works!"
-service jbossas7 start
+service jboss start
 service apache2 start
