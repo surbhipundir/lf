@@ -4,6 +4,8 @@ Download and image to an SD card the following Pi image:
 
 ftp://ftp.mirrorservice.org/sites/downloads.raspberrypi.org/images/debian/7/2013-05-29-wheezy-armel/
 
+date -s "2 OCT 2006 18:00:00"
+
 apt-get update
 
 apt-get install openjdk-7-jdk
