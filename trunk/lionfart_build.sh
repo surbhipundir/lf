@@ -25,17 +25,17 @@ cd $SRC_DIR
 
 #git pull
 #always override on pull
-echo "Grabbing latest source code from GIT Repo"
+echo "Grabbing latest source code from GIT Repo  @https://github.com/zoroloco/lf.git"
 git fetch origin master
 git reset --hard FETCH_HEAD
 git clean -df
 
 cd $SRC_DIR/trunk/lionfart
 
-echo "Deleting .metadata directory(if needed)"
-rm -rf $SRC_DIR/trunk/.metadata
+#echo "Deleting .metadata directory(if needed)"
+#rm -rf $SRC_DIR/trunk/.metadata
 
-echo "Now doing a maven clean install(may take a couple minutes...)"
+echo "Now doing a maven install(may take a couple minutes...)"
 #mvn clean install -DskipTests -U -P ci
 mvn install package
 
@@ -45,7 +45,7 @@ mvn install package
 #echo "Now copying over latest settings.xml to user .m2 dir so maven can work"
 #cp $SRC_DIR/trunk/.m2/settings.xml /root/.m2/
 
-echo "Now deploying EAR file(s)"
+echo "Now deploying JAR/WAR/EAR file(s) to JBOSS_HOME"
 rm -f $JBOSS_DIR/standalone/deployments/*.jar
 cp -R $SRC_DIR/trunk/lionfart/target/lionfart.jar $JBOSS_DIR/standalone/deployments
 
