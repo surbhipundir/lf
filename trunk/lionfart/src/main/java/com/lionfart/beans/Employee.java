@@ -1,4 +1,4 @@
-package com.lionfart.data;
+package com.lionfart.beans;
 
 public class Employee {
     private String employeeId;

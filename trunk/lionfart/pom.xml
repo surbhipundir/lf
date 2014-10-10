@@ -1,31 +1,36 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>lionfart</groupId>
+  <groupId>com.lionfart</groupId>
   <artifactId>lionfart</artifactId>
+  <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <build>
-    <sourceDirectory>src</sourceDirectory>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.0</version>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-        </configuration>
-      </plugin>
-       <plugin>
-          <artifactId>maven-war-plugin</artifactId>
-          <version>2.3</version>
-          <configuration>
-              <warSourceDirectory>WebContent</warSourceDirectory>
-              <failOnMissingWebXml>false</failOnMissingWebXml>
-          </configuration>
-      </plugin>
-    </plugins>
-    <finalName>${project.artifactId}</finalName>
-  </build>
-   <repositories>
+  <name>lionfart Maven Webapp</name>
+  <url>http://maven.apache.org</url>
+  
+   <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <warSourceDirectory>webapp</warSourceDirectory>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+    <repositories>
         <repository>
             <id>prime-repo</id>
             <name>PrimeFaces Maven Repository</name>
@@ -33,7 +38,6 @@
             <layout>default</layout>
         </repository>
     </repositories>
-    
     <dependencies>
         <!-- Servlet -->
         <dependency>
@@ -43,23 +47,34 @@
             <scope>provided</scope>
         </dependency>
         <!-- Faces Implementation -->
-        <dependency>
-            <groupId>com.sun.faces</groupId>
-            <artifactId>jsf-impl</artifactId>
-            <version>2.2.4</version>
-        </dependency>
-        <!-- Faces Library -->
+     
+        <!-- Faces Library 
         <dependency>
             <groupId>com.sun.faces</groupId>
             <artifactId>jsf-api</artifactId>
             <version>2.2.4</version>
         </dependency>
-        <!-- Primefaces Version 5 -->
+        -->
+        
         <dependency>
-            <groupId>org.primefaces</groupId>
-            <artifactId>primefaces</artifactId>
-            <version>5.0</version>
-        </dependency>
+			<groupId>javax.faces</groupId>
+			<artifactId>jsf-api</artifactId>
+			<version>2.1</version>
+			<scope>provided</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.primefaces.themes</groupId>
+			<artifactId>glass-x</artifactId>
+			<version>1.0.10</version>
+		</dependency>
+        
+        <dependency>
+			<groupId>org.primefaces.extensions</groupId>
+			<artifactId>primefaces-extensions</artifactId>
+			<version>1.2.1</version>
+		</dependency>
+       
         <!-- JSP Library -->
         <dependency>
             <groupId>javax.servlet.jsp</groupId>
@@ -73,4 +88,5 @@
             <version>1.1.2</version>
         </dependency>
     </dependencies>
+  
 </project>
