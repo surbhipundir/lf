@@ -47,7 +47,7 @@ mvn install package
 
 echo "Now deploying JAR/WAR/EAR file(s) to JBOSS_HOME"
 rm -f $JBOSS_DIR/standalone/deployments/*.jar
-cp -R $SRC_DIR/trunk/lionfart/target/lionfart.jar $JBOSS_DIR/standalone/deployments
+cp -R $SRC_DIR/trunk/lionfart/target/lionfart.war $JBOSS_DIR/standalone/deployments
 
 echo "Now lets start up jboss and apache again and hope this all works!"
 service jboss start
