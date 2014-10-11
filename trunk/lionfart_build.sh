@@ -46,7 +46,12 @@ mvn install package
 #cp $SRC_DIR/trunk/.m2/settings.xml /root/.m2/
 
 echo "Now deploying JAR/WAR/EAR file(s) to JBOSS_HOME"
-rm -f $JBOSS_DIR/standalone/deployments/*.jar
+rm -f $JBOSS_DIR/standalone/deployments/lionfart.war
+touch $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
+
+chown jboss $JBOSS_DIR/standalone/deployments/lionfart.war.deploy
+chgrp jboss $JBOSS_DIR/standalone/deployments/lionfart.war.deploy
+
 cp -R $SRC_DIR/trunk/lionfart/target/lionfart.war $JBOSS_DIR/standalone/deployments
 
 echo "Now lets start up jboss and apache again and hope this all works!"
