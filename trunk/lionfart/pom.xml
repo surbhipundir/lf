@@ -23,13 +23,21 @@
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.3</version>
                 <configuration>
-                    <warSourceDirectory>webapp</warSourceDirectory>
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                   <filesets>
+		              <fileset>
+		                <directory>src/main/webapp/WEB-INF/</directory>
+		                <includes>
+		                  <include>lib/</include>
+		                  <include>classes</include>
+		                </includes>
+		              </fileset>
+		            </filesets>
                 </configuration>
             </plugin>
         </plugins>
         <finalName>${project.artifactId}</finalName>
     </build>
+    
     <repositories>
         <repository>
             <id>prime-repo</id>
