@@ -1,9 +1,0 @@
-commit standalone.xml, apache configs and mod_jk configs.
-
-make the pom files more bare-bone
-
-get rid of clean of .m2 for every build in build script and speed up build time
-
-make .ear file smaller
-
-add support for primefaces in .pom. 
