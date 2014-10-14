@@ -50,8 +50,8 @@ rm -rf $SRC_DIR/trunk/lionfart/target/*
 rm -f $JBOSS_DIR/standalone/deployments/lionfart.war
 touch $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
 
-chown jboss $JBOSS_DIR/standalone/deployments/lionfart.war.deploy
-chgrp jboss $JBOSS_DIR/standalone/deployments/lionfart.war.deploy
+chown jboss $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
+chgrp jboss $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
 
 cp -R $SRC_DIR/trunk/lionfart/target/lionfart.war $JBOSS_DIR/standalone/deployments
 
