@@ -12,28 +12,29 @@ JBOSS_DIR="/usr/local/jboss7"
 service apache2 stop
 service jboss stop
 
-echo "Creating source directory(if needed)"
-if [ ! -d "/usr/src/lf" ]; then
-    echo "Creating /usr/src/lf dir"
-    mkdir /usr/src/lf
-fi
+#echo "Creating source directory(if needed)"
+#if [ ! -d "/usr/src/lf" ]; then
+#    echo "Creating /usr/src/lf dir"
+#    mkdir /usr/src/lf
+#fi
+
+echo "Deleting source directory"
+rm -rf $SRC_DIR
+
+#Initially get the repo.
+echo "Retrieving latest repo: git clone https://github.com/zoroloco/lf.git /usr/src/lf"
+git clone https://github.com/zoroloco/lf.git /usr/src/lf
 
 cd $SRC_DIR
 
-#Initially get the repo.
-#git clone https://github.com/zoroloco/lf.git /usr/src/lf
-
 #git pull
 #always override on pull
-echo "Grabbing latest source code from GIT Repo  @https://github.com/zoroloco/lf.git"
-git fetch origin master
-git reset --hard FETCH_HEAD
-git clean -df
+#echo "Grabbing latest source code from GIT Repo  @https://github.com/zoroloco/lf.git"
+#git fetch origin master
+#git reset --hard FETCH_HEAD
+#git clean -df
 
 cd $SRC_DIR/trunk/lionfart
-
-#echo "Deleting .metadata directory(if needed)"
-#rm -rf $SRC_DIR/trunk/.metadata
 
 echo "Now doing a maven install(may take a couple minutes...)"
 #mvn clean install -DskipTests -U -P ci
@@ -46,7 +47,6 @@ mvn install package
 #cp $SRC_DIR/trunk/.m2/settings.xml /root/.m2/
 
 echo "Now deploying JAR/WAR/EAR file(s) to JBOSS_HOME"
-rm -rf $SRC_DIR/trunk/lionfart/target/*
 rm -f $JBOSS_DIR/standalone/deployments/lionfart.war
 touch $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
 
