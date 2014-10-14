@@ -1,4 +1,6 @@
 #!/bin/bash
+
+# Instruction: move this file to /usr/src and run from there.
 #
 # chmod +x lionfart_build.sh
 #
