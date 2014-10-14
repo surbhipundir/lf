@@ -46,6 +46,7 @@ mvn install package
 #cp $SRC_DIR/trunk/.m2/settings.xml /root/.m2/
 
 echo "Now deploying JAR/WAR/EAR file(s) to JBOSS_HOME"
+rm -rf $SRC_DIR/trunk/lionfart/target/*
 rm -f $JBOSS_DIR/standalone/deployments/lionfart.war
 touch $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
 
