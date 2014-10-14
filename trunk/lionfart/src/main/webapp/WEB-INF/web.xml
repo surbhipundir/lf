@@ -4,6 +4,7 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
     id="WebApp_ID" version="3.0">
     <display-name>lionfart</display-name>
+  
     <servlet>
         <servlet-name>Faces Servlet</servlet-name>
         <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
@@ -14,6 +15,16 @@
         <url-pattern>*.xhtml</url-pattern>
         <url-pattern>/faces/*</url-pattern>
     </servlet-mapping>
+    <security-constraint>
+		<display-name>Public Unprotected</display-name>
+		<web-resource-collection>
+			<web-resource-name>PublicUnprotected</web-resource-name>
+			<url-pattern>/public/*</url-pattern>
+		</web-resource-collection>
+		<user-data-constraint>
+			<transport-guarantee>NONE</transport-guarantee>
+		</user-data-constraint>
+	</security-constraint>
     <context-param>
         <description>State saving method: 'client' or 'server' (=default). See JSF Specification 2.5.2</description>
         <param-name>javax.faces.STATE_SAVING_METHOD</param-name>
@@ -24,4 +35,7 @@
         <param-value>resources.application</param-value>
     </context-param>  
     
+    <welcome-file-list>
+  		<welcome-file>index.xhtml</welcome-file>
+	</welcome-file-list>
 </web-app>
