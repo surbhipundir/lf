@@ -7,6 +7,7 @@ ftp://ftp.mirrorservice.org/sites/downloads.raspberrypi.org/images/debian/7/2013
 date -s "2 OCT 2006 18:00:00"
 
 apt-get update
+apt-get upgrade 
 
 apt-get install openjdk-7-jdk
 
@@ -78,3 +79,9 @@ exit 0
 
 update-rc.d jboss defaults
 update-rc.d apache2 defaults
+
+apt-get install mysql-server
+#now set root password
+mysql_secure_installation
+
+/etc/init.d/mysql restart
