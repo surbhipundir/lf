@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jboss-web>
   <context-root>/</context-root>
+  
+   <security-domain>com.lionfart-jdbc-realm</security-domain>
+    
+    <!-- Add the ExtendedFormAuthenticator to get access to the exception and username. -->
+    <!--  You may like to add disableProxyCaching="false" attribute. 					-->
+	<valve>
+       <class-name>org.jboss.web.tomcat.security.ExtendedFormAuthenticator</class-name>
+       <param>
+           <param-name>includePassword</param-name>
+           <param-value>true</param-value>
+       </param>
+    </valve>     
+  
 </jboss-web> 
