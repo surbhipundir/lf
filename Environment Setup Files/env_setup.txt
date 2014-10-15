@@ -85,3 +85,6 @@ apt-get install mysql-server
 mysql_secure_installation
 
 /etc/init.d/mysql restart
+
+update-rc.d mysql defaults
+
