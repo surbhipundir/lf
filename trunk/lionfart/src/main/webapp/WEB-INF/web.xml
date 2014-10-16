@@ -30,7 +30,7 @@
 		<display-name>Secured And Protected</display-name>
 		<web-resource-collection>
 			<web-resource-name>lionfart</web-resource-name>
-			<url-pattern>/</url-pattern>
+			<url-pattern>/private/*</url-pattern>
 		</web-resource-collection>
 		<auth-constraint>
 			<role-name>Administrator</role-name>
@@ -65,6 +65,6 @@
     </context-param>  
     
     <welcome-file-list>
-  		<welcome-file>index.xhtml</welcome-file>
+  		<welcome-file>/private/index.xhtml</welcome-file>
 	</welcome-file-list>
 </web-app>

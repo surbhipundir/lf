@@ -1,0 +1,4 @@
+# Redirect / to /views/index.xhtml
+    RewriteEngine On
+    RewriteCond %{REQUEST_URI} ^/$ [NC]
+    RewriteRule ^/$ /views/index.xhtml [R]
