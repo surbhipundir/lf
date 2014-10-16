@@ -50,6 +50,13 @@
         <!-- Servlet -->
         
         <dependency>
+		<groupId>org.jboss.as</groupId>
+		<artifactId>jboss-as-server</artifactId>
+		<version>7.2.0.Final</version>
+	</dependency>
+
+        
+        <dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
 			<version>3.10-FINAL</version>
