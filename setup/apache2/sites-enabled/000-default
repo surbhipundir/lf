@@ -21,6 +21,11 @@
 		Allow from all
 	</Directory>
 
+	  # Redirect / to /private/lionfart.xhtml
+        RewriteEngine On
+        RewriteCond %{REQUEST_URI} ^/$ [NC]
+        RewriteRule ^/$ /private/lionfart.xhtml [R]
+
 	ErrorLog ${APACHE_LOG_DIR}/error.log
 
 	# Possible values include: debug, info, notice, warn, error, crit,
