@@ -5,3 +5,5 @@ pom.xml.releaseBackup
 pom.xml.next
 release.properties
 .metadata
+trunk/lionfart/src/main/webapp/WEB-INF/jboss-web.xml
+trunk/lionfart/pom.xml
