@@ -44,6 +44,8 @@ echo "Now doing a maven install(may take a couple minutes...)"
 #This will download jars from POM file
 #mvn install package
 
+#Note:  -U directive in MVN command will update snapshot
+
 #This will just do a build
 mvn install
 
