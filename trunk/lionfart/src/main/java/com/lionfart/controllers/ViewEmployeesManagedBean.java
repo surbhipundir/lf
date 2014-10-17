@@ -1,4 +1,4 @@
-package com.lionfart.data;
+package com.lionfart.controllers;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
 
-import com.lionfart.beans.Employee;
+import com.lionfart.entities.Employee;
   
 @ManagedBean
 @SessionScoped
