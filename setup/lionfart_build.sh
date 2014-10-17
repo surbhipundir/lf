@@ -40,7 +40,12 @@ cd $SRC_DIR/trunk/lionfart
 
 echo "Now doing a maven install(may take a couple minutes...)"
 #mvn clean install -DskipTests -U -P ci
-mvn install package
+
+#This will download jars from POM file
+#mvn install package
+
+#This will just do a build
+mvn install
 
 #echo "Now copying over latest standalone.xml to jboss dir"
 #cp $SRC_DIR/trunk/standalone.xml /usr/jboss/standalone/configuration/
