@@ -21,7 +21,7 @@ public class SessionBean implements Serializable {
 	 * 
 	 * 
 	 */
-    public void logout(){
+    public void logout(){    	
     		
     	HttpSession session = (HttpSession) FacesContext.getCurrentInstance().getExternalContext().getSession(false);
     	if(session != null){
