@@ -62,6 +62,7 @@ touch $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
 chown jboss $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
 chgrp jboss $JBOSS_DIR/standalone/deployments/lionfart.war.dodeploy
 
+#cp /usr/src/lf/trunk/lionfart/target/lionfart.war /usr/local/jboss/standalone/deployments
 cp -R $SRC_DIR/trunk/lionfart/target/lionfart.war $JBOSS_DIR/standalone/deployments
 
 echo "Now lets start up jboss and apache again and hope this all works!"
