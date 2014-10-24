@@ -6,6 +6,8 @@ create user 'lionfart' IDENTIFIED BY 'YOUR PASSWORD GOES HERE';
 
 GRANT ALL PRIVILEGES ON lionfart.* TO 'lionfart';
 
+flush privileges;
+
 CREATE TABLE `role` (
   `ROLE_ID` int(10) NOT NULL AUTO_INCREMENT,
   `NAME` varchar(70) NOT NULL,
