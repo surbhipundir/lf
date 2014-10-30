@@ -46,42 +46,25 @@
 	</h:head>
 	
 	<h:body>				
-		<h:form id="topForm">	
-	    
-		<p:confirmDialog closable="true" appendTo="@(body)" 
+		<p:confirmDialog closable="true" appendTo="@(body)"
 		  message="Are you sure you want to log out of the application?"
-		  header="Confirmation" severity="alert" widgetVar="logoutConfirm">
-	 			<p:commandButton value="Yes" actionListener="#{sessionBean.logout()}" 
-	 			 oncomplete="logoutConfirm.hide()" ajax="true" process="@this"/>
-	 			<p:commandButton value="No" onclick="logoutConfirm.hide();" type="button"/>
+		  header="Confirmation" severity="alert" widgetVar="logoutConfirm">		
+		 
+			<p:commandButton value="Yes" actionListener="#{sessionBean.logout()}" 
+			 oncomplete="PF('logoutConfirm').show()" ajax="true" process="@this"/>
+			<p:commandButton value="No" onclick="PF('logoutConfirm').hide();"/>	 
+			
 		</p:confirmDialog>	
-	
-	<div class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all" id="topsection">
-		<p:menubar id="menubar" style="height:24px;">																				
-			<p:menuitem  value="Logout" icon="ui-icon-extlink"  
-			 style="width:80px;position: absolute; right: 4px;"
-			 oncomplete="logoutConfirm.show()" ajax="true">
-			</p:menuitem>		
-		</p:menubar>	
-	</div>
-	
+	   
+		<h:form id="topForm">	
+			<div class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all" id="topsection">
+				<p:menubar id="menubar" style="height:24px;">																				
+					<p:menuitem  value="Logout" icon="ui-icon-extlink"  
+					 style="width:80px;position: absolute; right: 4px;" process="@this"
+					 oncomplete="PF('logoutConfirm').show();" ajax="true">
+					</p:menuitem>		
+				</p:menubar>	
+			</div>
 		</h:form>
-		
-		<!-- <p:outputLabel value="JournalDev - JSF2/Primefaces Tutorial"></p:outputLabel>
-		<p:dataTable value="#{viewEmployeesManagedBean.employees}" var="employee">
-		    <p:column>
-		        <f:facet name="header">
-		            <h:outputText value="Employee ID"></h:outputText>
-		        </f:facet>
-		        <h:outputText value="#{employee.employeeId}"></h:outputText>
-		    </p:column>
-		    <p:column>
-		        <f:facet name="header">
-		            <h:outputText value="Employee Name"></h:outputText>
-		        </f:facet>
-		        <h:outputText value="#{employee.employeeName}"></h:outputText>
-		    </p:column>
-		</p:dataTable> -->
-		
 	</h:body>
 </html>

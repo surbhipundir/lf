@@ -7,3 +7,11 @@ release.properties
 .metadata
 trunk/lionfart/src/main/webapp/WEB-INF/jboss-web.xml
 trunk/lionfart/pom.xml
+
+trunk/lionfart/.settings/org.eclipse.wst.common.project.facet.core.prefs.xml
+
+trunk/lionfart/.settings/org.eclipse.wst.common.project.facet.core.xml
+
+trunk/lionfart/.settings/org.eclipse.wst.validation.prefs
+
+trunk/lionfart/.settings/org.eclipse.wst.common.project.facet.core.xml
