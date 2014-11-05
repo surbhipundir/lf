@@ -248,7 +248,7 @@
                         <login-module code="Database" flag="required">
                             <module-option name="dsJndiName" value="java:jboss/datasources/LionFartDataSource"/>
                             <module-option name="principalsQuery" value="SELECT password FROM user WHERE user_name=?"/>
-                            <module-option name="rolesQuery" value="SELECT r.name, 'Roles' FROM user u JOIN user_role ur ON ur.user_id = u.user_id JOIN role r ON r.role_id = ur.role_id WHERE u.user_name=?"/>
+                            <module-option name="rolesQuery" value="SELECT r.name, 'Roles' FROM user u JOIN user_role ur ON ur.user_id = u.id JOIN role r ON r.id = ur.role_id WHERE u.user_name=?"/>
                         </login-module>
                     </authentication>
                 </security-domain>
