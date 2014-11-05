@@ -15,44 +15,79 @@
 			<title>Lionfart</title>
 		</f:facet>
 
-	<style type="text/css">
-	
-		#topsection{		
-			clear: left;
-			width: 100%;
-			background: url("/javax.faces.resource/images/header.png.xhtml?ln=primefaces-glass-x") repeat-x scroll 0 50% #ACBECE
-			color: #FFF;
-			text-align: center;
-			padding: 8px 0;
-		}
-			
-		body {
-			background: url(/images/bg.png);
-			margin: 0;
-			padding: 0;
-			font-family: geneva, arial, helvetica, sans-serif;
-			font-size:80%;
-			}	
-	</style>
+	<link rel="stylesheet" type="text/css" href="/css/global.css"/>	
 </h:head>
 
 <h:body>
-<div class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all" id="topsection">
-	<div align="right">
-		<form method="post" action="j_security_check">																												
-				<h:panelGrid columns="6">																				
-					<h:outputLabel for="j_username" style="font-weight:bold" value="Username:" />
-					<p:inputText id="j_username" name="j_username"	required="true" label="username" style="width:160px"/>
-					
-					<h:outputText style="font-weight:bold" value="Password: "/>										
-					<p:password  id="j_password" name="j_password" style="width:160px"/>
-											
-					<input type="submit" name="submit" value="Login"/>
-					<input type="reset" value="Clear"/>																	
-				</h:panelGrid>																					
-		</form>				
-	</div>
+
+<p:focus/>
+
+<div id="topsection">
+	<form method="post" action="j_security_check">											
+			<h:outputLabel for="j_username" style="font-weight:bold" value="Username:" />
+			<p:inputText id="j_username" name="j_username"	required="true" label="username" style="width:160px"/>
+			
+			<h:outputText style="font-weight:bold" value="Password: "/>										
+			<p:password  id="j_password" name="j_password" style="width:160px"/>
+									
+			<button class="lfbutton">Log in</button>
+			<input type="reset" class="lfbutton" value="Clear"/>																
+	</form>				
 </div>
+
+<br/><br/>
+
+<h:form id="signupFormID">
+	<div id="maincontainer">
+		<div id="contentwrapper">
+		    <div id="cleftcolumn"></div>
+		
+		    <div id="ccontentcolumn">
+				<div class="innertube">
+				    <p:messages closable="false" autoUpdate="true"/>
+				
+				    <p:panel id="signupPanelID">
+				        <f:facet name="header">
+				        	<p:outputLabel style="font-weight:normal">Create a free account</p:outputLabel>
+				        </f:facet>
+						<p:panelGrid columns="2" styleClass="noborder-panelgrid">
+							Username:
+							<p:inputText maxlength="16" size="30" value="#{signupController.username}"
+							required="true" requiredMessage="Please enter a username."/>
+						    Password:
+						    <p:password id="pwd1" maxlength="16" size="30" value="#{signupController.password}" 
+						      required="true" requiredMessage="Please enter a password." 
+						      match="pwd2"
+						      feedback="true" inline="true"/>
+							Confirm Password:
+							<p:password id="pwd2" maxlength="16" size="30" value="#{signupController.password}"
+							   required="true" requiredMessage="Please enter a password."
+							   feedback="true" inline="true"/>
+							Email:
+							<p:inputText id="email" label="email" size="30" maxlength="32" 
+								validatorMessage="Invalid email format"
+								value="#{signupController.email}" required="true"
+								requiredMessage="Please enter an email address.">
+							  <f:validateRegex
+								pattern="^[_A-Za-z0-9-\+]+(\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9]+)*(\.[A-Za-z]{2,})$" />
+							</p:inputText>	
+						</p:panelGrid>
+						
+						<div id="footer">
+							<div align="right">
+								<p:commandButton styleClass="lfbutton" style="font: bold 10px Arial,sans-serif;" 
+								   value="Sign up" ajax="true" actionListener="#{signupController.onSignUp()}"
+								   process=":signupFormID:signupPanelID" update=":signupFormID:signupPanelID"/>
+							</div>
+						</div>
+					</p:panel>
+				</div>
+			</div>
+			<div id="crightcolumn"></div>
+		</div>
+	</div>
+</h:form>
+  
 </h:body>
 
 </f:view>

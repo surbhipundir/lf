@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+		
+	html 
+	{ 
+		  background: url(/images/bg2.png) no-repeat center center fixed; 
+		  -webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+	}
+			
+	body 
+	{
+		margin: 0;
+		padding: 0;
+		font-family: geneva, arial, helvetica, sans-serif;
+		font-size:80%;
+	 }	
+			
+	.ui-menubar,.ui-menu-child,.ui-menu 
+	{
+	    background: gray;
+	    border: 0;
+	    margin: 0;
+	    padding: 0; 
+	 }
+	 
+	 #ccontentcolumn{
+		margin: 0 33% 0 33%; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+	}
+	
+	#cleftcolumn{
+		float: left;
+		width: 33%; /*Width of left column in percentage*/
+		margin-left: -33%;
+		background: url(/images/bg2.png) no-repeat center center fixed; 
+	}
+	
+	 #crightcolumn{
+		float: left;
+		width: 33%; /*Width of right column in pixels*/
+		margin-left: -33%; /*Set margin to that of -(RightColumnWidth)*/
+		background: url(/images/bg2.png) no-repeat center center fixed; 
+	 }
+	 
+	 #topsection
+	 {		
+		clear: left;
+		width: 100%;
+		background: gray
+		color: #FFF;
+		text-align: center;
+		padding: 8px 0;
+	  }
+	  
+	#footer{
+		clear:left;
+		width:100%;
+		text-align: center;
+		padding: 8px 0;
+	}
+	  
+	#contentwrapper{
+		float: left;
+		width: 100%;
+	}
+	
+	.innertube{
+		margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+		margin-top: 0;
+	}
+	
+	.noborder-panelgrid.ui-panelgrid tr,.noborder-panelgrid.ui-panelgrid.ui-panelgrid td {
+		border: none;
+	}
+
+
+.lfbutton {
+  font: bold 10px Arial,sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0.1em 0 rgba(255, 255, 255, 0.5);
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  padding: 0.4em 2em 0.5em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  border: 1px solid;
+  border-color: #bbbbbb #a2a2a2 #888888;
+  background-color: #eee;
+  background-image: -moz-linear-gradient(#eeeeee, #d4d4d4);
+  background-image: -webkit-linear-gradient(#eeeeee, #d4d4d4);
+  background-image: linear-gradient(#eeeeee, #d4d4d4);
+  -moz-box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+  -webkit-box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.1), 0 0.1em 0.2em rgba(0, 0, 0, 0.3), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+  -moz-transition: all 100ms;
+  -o-transition: all 100ms;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+}
+.lfbutton:hover {
+  -moz-box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.4), 0 0.1em 0.2em rgba(0, 0, 0, 0.4), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+  -webkit-box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.4), 0 0.1em 0.2em rgba(0, 0, 0, 0.4), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.4), 0 0.1em 0.2em rgba(0, 0, 0, 0.4), 0 -0.1em 0.07em rgba(0, 0, 0, 0.3) inset, 0 0.1em 0.07em rgba(255, 255, 255, 0.2) inset;
+}
+.lfbutton:active {
+  padding: 0.4em 2em 0.4em;
+  margin-top: 0.1em;
+  border-color: #a2a2a2 #bbbbbb #eee;
+  background-image: -moz-linear-gradient(#e1e1e1, #eeeeee);
+  background-image: -webkit-linear-gradient(#e1e1e1, #eeeeee);
+  background-image: linear-gradient(#e1e1e1, #eeeeee);
+  -moz-box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1) inset, 0 0.1em 0.1em rgba(0, 0, 0, 0.2) inset, 0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset, -0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset;
+  -webkit-box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1) inset, 0 0.1em 0.1em rgba(0, 0, 0, 0.2) inset, 0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset, -0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 0.1em 0.2em rgba(0, 0, 0, 0.1) inset, 0 0.1em 0.1em rgba(0, 0, 0, 0.2) inset, 0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset, -0.05em 0 0.07em rgba(0, 0, 0, 0.2) inset;
+  -moz-transition: all 10ms;
+  -o-transition: all 10ms;
+  -webkit-transition: all 10ms;
+  transition: all 10ms;
+}
+
+	  
